@@ -1,3 +1,8 @@
+# 1984 Dark theme:
+#include ./themes/dark-1984.conf
+# Tokyo Night:
+include ./themes/tokyonight_night.conf
+
 ### TESTING BEGIN ###
 map ctrl+backspace send_text all \x17
 map alt+c send_text all \x03
@@ -9,14 +14,8 @@ enabled_layouts tall:bias=50;full_size=1;mirrored=false
 map ctrl+o next_window
 map ctrl+f toggle_maximized
 
-# Layout/Window management:
-map alt+t new_tab
-map alt+w close_window
-map alt+n new_os_window
-map alt+enter new_window
-
 # Font settings:
-font_size 14.0
+font_size 12.0
 font_family Fira Code Medium
 
 # Tab bar settings:
@@ -24,12 +23,12 @@ tab_bar_style powerline
 
 # Background settings:
 dynamic_background_opacity yes
-background_opacity 0.70
+background_opacity 0.92
 
 # Window settings:
 inactive_text_alpha 1.0
 remember_window_size yes
-#hide_window_decorations yes
+hide_window_decorations yes
 
 # Bell settings:
 bell_on_tab "🔔"
@@ -48,11 +47,3 @@ clipboard_control read-clipboard read-primary write-clipboard write-primary
 
 # Disable closing window warning
 confirm_os_window_close 0
-
-# Reload config
-map shift+alt+r load_config_file
-
-# BEGIN_KITTY_THEME
-# T-Money
-include current-theme.conf
-# END_KITTY_THEME
